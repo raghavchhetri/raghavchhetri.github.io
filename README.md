@@ -1,7 +1,5 @@
 ## Personal favorite articles over the years
 
-[Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now)
-
 [Optogenetics](https://www.theguardian.com/science/neurophilosophy/2014/dec/22/researchers-read-and-write-brain-activity-with-light)
 
 [Cancer’s Secrets Come Into Sharper Focus](http://www.nytimes.com/2011/08/16/health/16cancer.html?pagewanted=all)
@@ -10,7 +8,7 @@
 
 [Finding peace in Kathmandu](http://www.bbc.com/travel/feature/20120116-find-peace-in-kathmandu)
 
-[Microbes](https://www.bbc.com/future/article/20120412-the-beasts-inside-you/4http://www.bbc.co.uk/news/magazine-15356016)
+[Microbiome: How bugs may be crucial to your health](https://www.bbc.com/future/article/20120412-the-beasts-inside-you/4http://www.bbc.co.uk/news/magazine-15356016)
 
 [Coincidences: What are the chances of them happening?](http://www.bbc.com/future/story/20120426-what-a-coincidence/)
 
@@ -22,6 +20,7 @@
 
 [Magnetosensitive Neuron in Animal](http://www.sci-news.com/othersciences/neuroscience/science-afd-magnetosensitive-neuron-02925.html)
 
+[Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now)
 
 ---
 ## Welcome to GitHub Pages
