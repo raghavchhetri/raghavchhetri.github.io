@@ -1,3 +1,15 @@
 theme: jekyll-theme-cayman
 title: Raghav K. Chhetri
 description: Will be exploring ideas and depositing them here
+
+author:
+  name: "Raghav K. Chhetri"
+  bio: "I am a **Scientist**." # Note: Markdown is allowed
+  location: "HHMI Janelia, Ashburn, VA"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/RChhill"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/raghavchhetri"
