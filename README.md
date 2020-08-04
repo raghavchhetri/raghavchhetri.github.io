@@ -1,7 +1,5 @@
 ## Personal favorite articles over the years
 
-[Optogenetics](https://www.theguardian.com/science/neurophilosophy/2014/dec/22/researchers-read-and-write-brain-activity-with-light)
-
 [Cancer’s Secrets Come Into Sharper Focus](http://www.nytimes.com/2011/08/16/health/16cancer.html?pagewanted=all)
 
 [An Immune System Trained to Kill Cancer](http://www.nytimes.com/2011/09/13/health/13gene.html?pagewanted=all)
