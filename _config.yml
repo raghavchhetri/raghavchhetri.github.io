@@ -1,7 +1,14 @@
 theme: jekyll-theme-cayman
 title: Raghav K. Chhetri
 description: Will be exploring ideas and depositing them here
-
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+      
 author:
   name: "Raghav K. Chhetri"
   bio: "I am a **Scientist**." # Note: Markdown is allowed
