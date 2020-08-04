@@ -1,6 +1,8 @@
 theme: jekyll-theme-cayman
 title: Raghav K. Chhetri
 description: Will be exploring ideas and depositing them here
+google_analytics: [Your Google Analytics tracking ID]
+
 defaults:
   # _posts
   - scope:
