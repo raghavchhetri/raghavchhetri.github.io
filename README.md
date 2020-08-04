@@ -1,3 +1,7 @@
+## Personal favorite articles over the years
+
+[Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/raghavchhetri/raghavchhetri.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
