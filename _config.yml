@@ -2,3 +2,4 @@ name: Raghav K. Chhetri
 markdown: kramdown
 description: Will be exploring ideas and depositing them here
 google_analytics: [Your Google Analytics tracking ID]
+permalink: /blog/:year/:month/:day/:title
