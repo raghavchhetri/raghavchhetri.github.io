@@ -40,9 +40,10 @@ Syntax highlighted code block
 
 ---
 theme: jekyll-theme-cayman
+
 title: Raghav K. Chhetri
+
 description: Will be exploring ideas and depositing them here
-google_analytics: [Your Google Analytics tracking ID]
 
 defaults:
   # _posts
@@ -54,8 +55,11 @@ defaults:
       
 author:
   name: "Raghav K. Chhetri"
+  
   bio: "I am a **Scientist**." # Note: Markdown is allowed
+  
   location: "HHMI Janelia, Ashburn, VA"
+  
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
