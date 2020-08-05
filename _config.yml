@@ -1,5 +1,5 @@
 name: Raghav K. Chhetri
 markdown: kramdown
+permalink: /scattered.dimes/:year/:month/:day/:title
 description: Will be exploring ideas and depositing them here
 google_analytics: [Your Google Analytics tracking ID]
-permalink: /blog/:year/:month/:day/:title
