@@ -11,4 +11,4 @@ Here is a collection of my pesonal favorite articles over the years:
 - [An Immune System Trained to Kill Cancer](http://www.nytimes.com/2011/09/13/health/13gene.html?pagewanted=all), September 2011
 - [The Root of Thought: What Do Glial Cells Do?](http://www.scientificamerican.com/article/the-root-of-thought-what/), October 2009
 
-![DrosophilaCombined](about/DrosophilaCombined.jpg)
+![DrosophilaCombined]("/about/DrosophilaCombined.jpg")
