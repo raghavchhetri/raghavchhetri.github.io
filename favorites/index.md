@@ -1,4 +1,4 @@
-Here is a collection of my pesonal favorite articles over the years:
+Here is a collection of a few of my personal favorite articles over the years:
 
 - [Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now), June 2018
 - [Magnetosensation: Finding a worm's internal compass](https://elifesciences.org/articles/09666), August 2015
