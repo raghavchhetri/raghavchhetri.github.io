@@ -1,7 +1,7 @@
 Here is a collection of my pesonal favorite articles over the years:
 
 [Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now), June 2018
-[Magnetosensitive Neuron in Animal](http://www.sci-news.com/othersciences/neuroscience/science-afd-magnetosensitive-neuron-02925.html), June 2015
+[Magnetosensation: Finding a worm's internal compass](https://elifesciences.org/articles/09666), August 2015
 [Sebastian Seung’s Quest to Map the Human Brain](http://www.nytimes.com/2015/01/11/magazine/sebastian-seungs-quest-to-map-the-human-brain.html), January 2015
 [‘Moonshot’ Medicine Will Let Us Down](http://www.nytimes.com/2015/01/29/opinion/moonshot-medicine-will-let-us-down.html), January 2015
 [Microbes: How bugs may be crucial to your health](https://www.bbc.com/future/article/20120412-the-beasts-inside-you/4http://www.bbc.co.uk/news/magazine-15356016), April 2012
