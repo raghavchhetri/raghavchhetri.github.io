@@ -1,4 +1,4 @@
-Here is a collection of articles that I've found fascinating over the years and tend to go back and read:
+Here is a collection of my pesonal favorite articles over the years:
 
 [Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now), June 2018
 
