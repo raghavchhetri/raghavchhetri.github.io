@@ -1,6 +1,6 @@
 Here is a collection of articles that I've found fascinating over the years and tend to go back and read:
 
-[Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now)
+[Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now), June 2018
 
 [Optogenetics](https://www.theguardian.com/science/neurophilosophy/2014/dec/22/researchers-read-and-write-brain-activity-with-light)
 
