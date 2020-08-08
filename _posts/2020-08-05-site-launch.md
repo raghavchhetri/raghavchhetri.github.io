@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "GitHub Pages site launch"
+title: "GitHub Pages site launched!"
 date: 2020-08-05
 ---
 
 Thanks to GitHub Pages, my personal page is now live!
-I'll be using [Markdown](//https://www.markdownguide.org/) to author my Scattered dimes posts, which [Jekyll](https://jekyllrb.com/) then uses to rebuild the pages. Sounds easy and exciting!
+I'll be using [Markdown](//https://www.markdownguide.org/) to write posts here. Thanks to [Jekyll](https://jekyllrb.com/), Markdown gets tranlated to HTML behind the scenes and my pages are ready. Sounds easy and exciting!
 
 ---
 ## NTS
