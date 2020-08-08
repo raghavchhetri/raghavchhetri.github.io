@@ -7,6 +7,6 @@ Here is a collection of a few of my personal favorite articles over the years:
 - [Microbes: How bugs may be crucial to your health](https://www.bbc.com/future/article/20120412-the-beasts-inside-you/4http://www.bbc.co.uk/news/magazine-15356016), April 2012
 - [Coincidences: What are the chances of them happening?](http://www.bbc.com/future/story/20120426-what-a-coincidence/), April 2012
 - [Finding peace in Kathmandu](http://www.bbc.com/travel/feature/20120116-find-peace-in-kathmandu), January 2012
-- [Cancer’s Secrets Come Into Sharper Focus](http://www.nytimes.com/2011/08/16/health/16cancer.html?pagewanted=all), August 2011
 - [An Immune System Trained to Kill Cancer](http://www.nytimes.com/2011/09/13/health/13gene.html?pagewanted=all), September 2011
+- [Cancer’s Secrets Come Into Sharper Focus](http://www.nytimes.com/2011/08/16/health/16cancer.html?pagewanted=all), August 2011
 - [The Root of Thought: What Do Glial Cells Do?](http://www.scientificamerican.com/article/the-root-of-thought-what/), October 2009
