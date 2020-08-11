@@ -5,7 +5,7 @@ date: 2020-08-05
 ---
 
 Thanks to GitHub Pages, my personal page is now live!
-I'll be using [Markdown](//https://www.markdownguide.org/) to write posts here. Thanks to [Jekyll](https://jekyllrb.com/), Markdown gets tranlated to HTML behind the scenes and the pages become ready to be viewed.
+I'll be using [Markdown](//https://www.markdownguide.org/) to write posts here. Thanks to [Jekyll](https://jekyllrb.com/), Markdown gets tranlated to HTML behind the scenes and the pages are ready for the viewers.
 
 ---
 ## NTS
