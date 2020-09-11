@@ -1,4 +1,7 @@
- <title /> Favorite articles
+---
+layout: default
+title: Favorite articles
+--- 
 
 Here is a collection of a few of my personal favorite articles over the years:
 
