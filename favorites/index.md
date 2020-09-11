@@ -1,4 +1,4 @@
-#Favorite articles
+ <title /> Favorite articles
 
 Here is a collection of a few of my personal favorite articles over the years:
 
