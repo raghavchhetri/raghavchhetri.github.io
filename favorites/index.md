@@ -19,7 +19,9 @@ Here is a collection of a few of my personal favorite articles over the years:
 - [Eye Cells as Light Pipes](https://physics.aps.org/story/v25/st15), April 2010 <sup>[&Dagger;](#note2)</sup>
 - [The Root of Thought: What Do Glial Cells Do?](http://www.scientificamerican.com/article/the-root-of-thought-what/), October 2009
 
-<font size="3"> <a name="note1">&dagger;</a> I once had the pleasure of imaging several Scallop eyes (prettiest blue eyes!), courtesy of Dan Speiser and Sönke Johnsen </font> 
-
-
-<font size="3"> <a name="note2">&Dagger;</a> Related stories on Müller glial cells </font> 
+<font size="3">
+  
+  <a name="note1">&dagger;</a> I once had the pleasure of imaging several Scallop eyes (prettiest blue eyes!), courtesy of Dan Speiser and Sönke Johnsen
+  
+  <a name="note2">&Dagger;</a> Related stories on Müller glial cells
+</font> 
