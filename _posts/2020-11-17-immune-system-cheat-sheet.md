@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes on Immune System Response"
+title: "Immune System Cheat Sheet"
 date: 2020-11-17
 ---
 
