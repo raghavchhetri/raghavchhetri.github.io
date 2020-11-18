@@ -4,12 +4,12 @@ title: "Immune System Cheat Sheet"
 date: 2020-11-17
 ---
 
-Our immune system can be broadly categorized into a fast-responding system and a slow-responding system as follows:
+Our immune system can be broadly categorized into a fast-responding system and a slow-responding system:
 
 **1. Innate or natural system (fast)**
 
 Fast acting system (0-96 hours) which serves as the first-line of defense
-* Recongnizes invading substace (termed **antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins fragments that the pathogens express
+* Recongnizes invading substance (**antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins fragments that the pathogens express
 
 * Releases chemical cues (**cytokines**) to alarm and activate the Adaptive response
 
@@ -30,10 +30,10 @@ It mounts a response by producing **B-cells** and **T-cells**, which is a slow p
     
 2.2 T-cells
 
-* There are two varieties of T-cells: helper T-cells and killer T-cells
+* There are two kinds of T-cells: **helper T-cells** and **killer T-cells**
 
-* The helper T-cells release more cytokines (ie sounds the alarm bells) to prime the maturation of B-cells
+* Helper T-cells release more cytokines (ie sounds the alarm bells) to prime the maturation of B-cells
 
-* The killer T-cells directly kill the infected cells in our body
+* Killer T-cells directly kill the infected or hijacked cells
 
 * Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
