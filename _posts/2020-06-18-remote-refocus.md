@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remote Focusing and recent applications in light-sheet microscopy"
+title: "Remote Focusing in light-sheet microscopy"
 date: 2020-06-18
 ---
 
