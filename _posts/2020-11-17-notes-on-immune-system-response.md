@@ -10,9 +10,9 @@ Our immune system can be broadly categorized into a fast-responding system and a
 
 Fast acting system (0-96 hours) which serves as the first-line of defense
 
-    1.1 Recongnizes degraded fragments of infectious agent (**antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins that these pathogens express
+- 1.1 Recongnizes degraded fragments of infectious agent (**antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins that these pathogens express
 
-    1.2 Releases chemical cues (**cytokines**) to alarm and activate the Adaptive response
+- 1.2 Releases chemical cues (**cytokines**) to alarm and activate the Adaptive response
 
     
 **2. Adaptive system (slow)**
