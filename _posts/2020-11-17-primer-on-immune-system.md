@@ -1,4 +1,4 @@
-## Immune system
+## Notes on immune system response
 
 Can be broadly categorized into a fast-responding system and a slow-responding system as follows:
 
