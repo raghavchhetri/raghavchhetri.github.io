@@ -20,20 +20,20 @@ Activated when alarmed by the Innate system and the response is slow (96 hours t
 
 Starts producing **B-cells** and **T-cells** to fend off the infection
 
-2.1 **B-cells**
+2.1 B-cells
 
-* Recognize the **antigens** (fragments of the infecting agent) and produce antibodies to fend off the infection
+* Recognize the antigens and produce antibodies to fend off the infection
 
-* Once infection is cleared, the production of antibodies is slowed down and the B-cells convert from antibody-producing **plasma B-cells** to **memory B-cells** that persist in our body for years
+* Once infection is cleared, the production of antibodies is slowed down and the B-cells convert from antibody-producing plasma B-cells to memory B-cells that persist in our body for years
 
-* When a future infection is detected, they quickly convert to **plasma B-cells** and mount a faster and stronger immune response
+* When a future infection is detected, they quickly convert to plasma B-cells and mount a faster and stronger immune response
     
-2.2 **T-cells**
+2.2 T-cells
 
-* There are two varieties of T-cells: **helper T-cells** and **killer T-cells**
+* There are two varieties of T-cells: helper T-cells and killer T-cells
 
-* The **helper T-cells** release more **cytokines** (ie sounds the alarm bells) to prime the maturation of **B-cells**
+* The helper T-cells release more cytokines (ie sounds the alarm bells) to prime the maturation of B-cells
 
-* The **killer T-cells** directly kill the infected cells in our body
+* The killer T-cells directly kill the infected cells in our body
 
-* Remain in the body as **memory T-cells** once infection is cleared. These memory lymphocytes remain dormant until the next time the same pathogen is encountered
+* Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until the next time the same pathogen is encountered
