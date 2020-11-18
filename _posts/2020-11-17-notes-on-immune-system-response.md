@@ -1,13 +1,13 @@
 Our immune system can be broadly categorized into a fast-responding system and a slow-responding system as follows:
 
-### **1. Innate or natural system (fast)**
+**1. Innate or natural system (fast)**
 - Fast acting system which serves as the first-line of defense
 
 1.1 Releases chemical cues (**cytokines**) to activate the Adaptive response
   
 1.2 Degraded fragments of infectious agent (**antigens**)
     
-### **2. Adaptive system (slow)**
+**2. Adaptive system (slow)**
 - Response begins once alarmed by the Innate system
 - Starts producing **B-cells** and **T-cells**; takes a few days
 
