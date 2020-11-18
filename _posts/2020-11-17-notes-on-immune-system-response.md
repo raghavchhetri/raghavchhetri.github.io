@@ -33,7 +33,7 @@ Starts producing **B-cells** and **T-cells** to fend off the infection
 
     There are two varieties of T-cells: **helper T-cells** and **killer T-cells**
 
-    The **helper T-cells** release more cytokines (sounds the alarm bells) to prime the maturation of **B-cells**
+    The **helper T-cells** release more **cytokines** (ie sounds the alarm bells) to prime the maturation of **B-cells**
 
     The **killer T-cells** directly kill the infected cells in our body
 
