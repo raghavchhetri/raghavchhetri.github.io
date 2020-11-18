@@ -1,6 +1,6 @@
 ## Notes on immune system response
 
-Can be broadly categorized into a fast-responding system and a slow-responding system as follows:
+Our immune system can be broadly categorized into a fast-responding system and a slow-responding system as follows:
 
 #### **1. Innate or natural system (fast)**
 - Fast acting system which serves as the first-line of defense
