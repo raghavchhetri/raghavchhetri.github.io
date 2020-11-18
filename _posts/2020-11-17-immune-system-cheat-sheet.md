@@ -9,16 +9,16 @@ Our immune system can be broadly categorized into a fast-responding system and a
 **1. Innate or natural system (fast)**
 
 Fast acting system (0-96 hours) which serves as the first-line of defense
-* Recongnizes degraded fragments of infectious agent (**antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins that these pathogens express
+* Recongnizes invading substace (termed **antigens**) which can be pathogens such as bacteria, viruses, fungi, and parasites, or smaller proteins fragments that the pathogens express
 
 * Releases chemical cues (**cytokines**) to alarm and activate the Adaptive response
 
     
 **2. Adaptive system (slow)**
 
-Activated when alarmed by the Innate system and the response is slow (96 hours to a few days)
+Activated by the alarm bell sounded by the Innate system
 
-Starts producing **B-cells** and **T-cells** to fend off the infection
+It mounts a response by producing **B-cells** and **T-cells**, which is a slow process (can take anywhere from >96 hours to a few days/week)
 
 2.1 B-cells
 
@@ -36,4 +36,4 @@ Starts producing **B-cells** and **T-cells** to fend off the infection
 
 * The killer T-cells directly kill the infected cells in our body
 
-* Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until the next time the same pathogen is encountered
+* Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
