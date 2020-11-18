@@ -4,6 +4,7 @@ title: Favorite articles
 --- 
 
 Here is a collection of a few of my personal favorite articles over the years:
+- [The story of mRNA: How a once-dismissed idea became a leading technology in the Covid vaccine race](https://www.statnews.com/2020/11/10/the-story-of-mrna-how-a-once-dismissed-idea-became-a-leading-technology-in-the-covid-vaccine-race/), November 2020
 - [What Scallops’ Many Eyes Can Teach Us About the Evolution of Vision](https://www.smithsonianmag.com/science-nature/what-scallops-many-eyes-can-teach-us-about-evolution-vision-180972099/), May 2019 <sup>[&dagger;](#note1)</sup>
 - [Eugenics never went away](https://aeon.co/essays/eugenics-today-where-eugenic-sterilisation-continues-now), June 2018
 - [Visual Optics: Remarkable Image-Forming Mirrors in Scallop Eyes](https://www.cell.com/current-biology/pdf/S0960-9822(18)30145-3.pdf), March 2018 <sup>[&dagger;](#note1)</sup>
