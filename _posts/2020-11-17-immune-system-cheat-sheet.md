@@ -4,7 +4,7 @@ title: "Immune System Cheat Sheet"
 date: 2020-11-17
 ---
 
-Our immune system can be broadly categorized into a fast-responding system and a slow-responding system:
+<p style="font-size:21px;"> Our immune system can be broadly categorized into a fast-responding system and a slow-responding system: </p>
 
 **1. Innate or natural system (fast)**
 
