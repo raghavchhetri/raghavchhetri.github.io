@@ -1,5 +1,5 @@
 ---
-layout: posting
+layout: post
 title: "Immune System Cheat Sheet"
 date: 2020-11-17
 ---
