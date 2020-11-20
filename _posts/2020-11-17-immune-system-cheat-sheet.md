@@ -2,9 +2,11 @@
 layout: post
 title: "Immune System Cheat Sheet"
 date: 2020-11-17
+
+<body style="font-family:'Times New Roman';color:blue; font-size:100%">
 ---
 
-<p style="font-size:16px;"> Our immune system can be broadly categorized into a fast-responding system and a slow-responding system:
+Our immune system can be broadly categorized into a fast-responding system and a slow-responding system:
 
 **1. Innate or natural system (fast)**
 
@@ -37,4 +39,3 @@ It mounts a response by producing **B-cells** and **T-cells**, which is a slow p
 * Killer T-cells directly kill the infected or hijacked cells
 
 * Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
-</p>
