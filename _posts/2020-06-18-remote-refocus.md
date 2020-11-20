@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remote-focusing in light-sheet microscopy"
+title: "<a href="https://raghavchhetri.github.io/pdf/remote-refocus.pdf#view=FitH">Remote-focusing in light-sheet microscopy</a>"
 date: 2020-06-18
 ---
 
