@@ -2,8 +2,6 @@
 layout: post
 title: "Immune System Cheat Sheet"
 date: 2020-11-17
-
-<body style="font-family:'Times New Roman';color:blue; font-size:100%">
 ---
 
 Our immune system can be broadly categorized into a fast-responding system and a slow-responding system:
