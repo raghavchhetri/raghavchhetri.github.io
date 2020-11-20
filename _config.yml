@@ -2,6 +2,4 @@ name: Raghav K. Chhetri
 markdown: kramdown
 permalink: /scattered.dimes/:year/:month/:day/:title
 #theme: jekyll-theme-cayman
-# Jekyll theme overriden and using default.html theme defined in _layouts
-theme: "minimal-mistakes-jekyll"
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+#Jekyll theme overriden and using default.html theme defined in _layouts
