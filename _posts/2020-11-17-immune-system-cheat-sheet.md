@@ -48,7 +48,7 @@ Some children who do get infected never test positive for the virus on a standar
 Their immune system sees the virus “and it just mounts this really quick and effective immune response that shuts it down, before it has a chance to replicate to the point that it comes up positive on the swab diagnostic test”, says immunologist Melanie Neeland. 
 The source of children’s immune advantage is thought to arise from one — or several — of these factors:
 
-- Children’s T cells are untrained, so they might have a greater capacity to respond to new viruses.
-- Children might have a strong innate immune response from birth, although that raises the question of why it isn’t seen with other viruses that can cause severe disease in children.
-- It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children.
-- Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access.
+* Children’s T cells are untrained, so they might have a greater capacity to respond to new viruses.
+* Children might have a strong innate immune response from birth, although that raises the question of why it isn’t seen with other viruses that can cause severe disease in children.
+* It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children.
+* Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access.
