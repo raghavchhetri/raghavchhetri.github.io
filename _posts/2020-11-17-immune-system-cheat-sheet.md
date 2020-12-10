@@ -37,3 +37,18 @@ It mounts a response by producing **B-cells** and **T-cells**, which is a slow p
 * Killer T-cells directly kill the infected or hijacked cells
 
 * Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
+
+--
+
+The following is from this news article [How kids’ immune systems can evade COVID](https://www.nature.com/articles/d41586-020-03496-7?utm_source=Nature+Briefing&utm_campaign=36e01a006c-briefing-dy-20201210&utm_medium=email&utm_term=0_c9dfd39373-36e01a006c-44050045) published on Dec 10, 2020
+
+A growing body of evidence suggests why young children account for only a small percentage of COVID-19 infections: their immune systems seem better equipped to eliminate SARS-CoV-2 than are adults’. 
+
+Some children who do get infected never test positive for the virus on a standard RNA test, even if they develop symptoms and have antibodies specific to SARS-CoV-2. 
+Their immune system sees the virus “and it just mounts this really quick and effective immune response that shuts it down, before it has a chance to replicate to the point that it comes up positive on the swab diagnostic test”, says immunologist Melanie Neeland. 
+The source of children’s immune advantage is thought to arise from one — or several — of these factors:
+
+- Children’s T cells are untrained, so they might have a greater capacity to respond to new viruses.
+- Children might have a strong innate immune response from birth, although that raises the question of why it isn’t seen with other viruses that can cause severe disease in children.
+- It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children.
+- Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access.
