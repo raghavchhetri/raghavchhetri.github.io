@@ -24,7 +24,7 @@ It mounts a response by producing **B-cells** and **T-cells**, which is a slow p
 
 * Recognize the antigens and produce antibodies to fend off the infection
 
-* Once infection is cleared, the production of antibodies is slowed down and the B-cells convert from antibody-producing plasma B-cells to memory B-cells that persist in our body for years
+* Once infection is cleared, the production of antibodies is slowed down and the B-cells convert from antibody-producing **plasma B-cells** to **memory B-cells** that persist in our body for years
 
 * When a future infection is detected, they quickly convert to plasma B-cells and mount a faster and stronger immune response
     
@@ -36,7 +36,7 @@ It mounts a response by producing **B-cells** and **T-cells**, which is a slow p
 
 * Killer T-cells directly kill the infected or hijacked cells
 
-* Remain in the body as memory T-cells once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
+* Remain in the body as **memory T-cells** once infection is cleared. These memory lymphocytes remain dormant until same pathogen or protein fragments are encountered again
 
 --
 
@@ -48,7 +48,10 @@ Some children who do get infected never test positive for the virus on a standar
 Their immune system sees the virus “and it just mounts this really quick and effective immune response that shuts it down, before it has a chance to replicate to the point that it comes up positive on the swab diagnostic test”, says immunologist Melanie Neeland. 
 The source of children’s immune advantage is thought to arise from one — or several — of these factors:
 
-* Children’s T cells are untrained, so they might have a greater capacity to respond to new viruses.
-* Children might have a strong innate immune response from birth, although that raises the question of why it isn’t seen with other viruses that can cause severe disease in children.
-* It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children.
-* Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access.
+* Children’s T cells are untrained, so they might have a greater capacity to respond to new viruses
+
+* Children might have a strong innate immune response from birth, although that raises the question of why it isn’t seen with other viruses that can cause severe disease in children
+
+* It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children
+
+* Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access
