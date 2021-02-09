@@ -57,5 +57,4 @@ The source of children’s immune advantage is thought to arise from one — or 
 * Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access
 
 <img src="/pics/covid-tests.png" alt="Covid tests" style="height:100%; width:100%; object-fit:contain" class="inline"/>
-
 <img src="/pics/covid-viral-load.png" alt="Covid viral load" style="height:100%; width:100%; object-fit:contain" class="inline"/>
