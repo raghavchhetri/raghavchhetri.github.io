@@ -55,3 +55,7 @@ The source of children’s immune advantage is thought to arise from one — or 
 * It could be thanks to the protection of antibodies to seasonal common-cold coronaviruses, which run rampant in children
 
 * Kids might receive a smaller dose when exposed to SARS-CoV-2, because their noses contain fewer of the ACE2 receptors that the virus uses to gain access
+
+![Covid tests](https://github.com/raghavchhetri/raghavchhetri.github.io/tree/master/pics/covid-tests.png)
+
+![Covid viral load](https://github.com/raghavchhetri/raghavchhetri.github.io/tree/master/pics/covid-viral-load.png)
