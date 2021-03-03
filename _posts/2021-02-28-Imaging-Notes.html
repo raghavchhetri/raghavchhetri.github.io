@@ -14268,16 +14268,16 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Image-formation">Image formation<a class="anchor-link" href="#Image-formation">&#182;</a></h2><p>The essence of image formation is captured by the following equation:</p>
-$$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*PSF_{em}(x,y) + N(x,y)$$<p>where,</p>
+$$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*P\!S\!F_{em}(x,y) + N(x,y)$$<p>where,</p>
 <p>$I_{em}(x,y)$ is the emission intensity observed at (x,y)</p>
 <p>$I_{ex}(x,y)$ is the excitation intensity</p>
 <p>$S(x,y)$ is the distribution of source (eg., fluorophores)</p>
-<p>$PSF_{em}(x,y)$ is the blurring function for incoherent detection (convolution kernel)</p>
+<p>$P\!S\!F_{em}(x,y)$ is the blurring function for incoherent detection (convolution kernel)</p>
 <p>$N(x,y)$ is additional noise</p>
 <p>This term, $[I_{ex}(x,y) \times S(x,y)]$, is the underlying object under observation. As seen here, it first gets blurred by a convolution kernel (PSF), then there are various noises that come for a ride, and this is the signal that we measure. <a href="https://en.wikipedia.org/wiki/Deconvolution">Deconvolution</a> is an attempt to solve the inverse-problem, given the measured image, an estimate of the convolution kernel and the noise</p>
 <p>In frequency-domain, the above equation takes the following form:</p>
-$$I_{em}(k_x,k_y) = [I_{ex}(k_x,k_y) * S(k_x,k_y)] \times OTF_{em}(k_x,k_y)$$<p>where, 
-$OTF_{em}(k_x,k_y)$ is the optical transfer function-- it is a Fourier transform of the point-spread function ($PSF$), so it's a complex-valued function of spatial frequencies ($k_x$ and $k_y$). It estimates how an imaging system handles various spatial frequencies as light travels from object space to image space. For a diffraction-limited optical system, the spatial frequency has a detection cutoff at $k_{em} = 2 NA/\lambda_{em}$. In other words, spatial frequencies higher than this don't make it through a diffraction-limited imaging system. Note that Abbe lateral resolution is given by ${\lambda_{em}}/{2NA}$</p>
+$$I_{em}(k_x,k_y) = [I_{ex}(k_x,k_y) * S(k_x,k_y)] \times OT\!F_{em}(k_x,k_y)$$<p>where, 
+$OT\!F_{em}(k_x,k_y)$, optical transfer function, is a Fourier transform of the point-spread function (PSF), so technically, it is a complex-valued function of spatial frequencies ($k_x$ and $k_y$), although for a PSF that is symmetric about its center, it is real-valued. It estimates how an imaging system handles various spatial frequencies as light travels from object space to image space. For a diffraction-limited optical system, the spatial frequency has a detection cutoff at $k_{em} = 2 N\!A/\lambda_{em}$. In other words, spatial frequencies higher than this don't make it through a diffraction-limited imaging system. Note that this cutoff here is taken as the inverse of Abbe lateral resolution</p>
 
 </div>
 </div>
@@ -14285,50 +14285,58 @@ $OTF_{em}(k_x,k_y)$ is the optical transfer function-- it is a Fourier transform
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 <h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p><strong>Light-sheet thickness (FWHM)</strong></p>
-$$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi NA_{LS}} = 0.375 \times \frac {\lambda_{LS}} {NA_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak.</p>
+$$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi N\!A_{LS}} = 0.375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
 <ul>
-<li>$1/e^2$ size (Gaussian beam radius, $\omega_{o}$), is often used to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \times \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. Note that the electric field strength at this location only drops by $1/e$ or 37%</li>
+<li>$1/e^2$ size (Gaussian beam radius, $\omega_{o}$), is often used to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \times \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
 </ul>
-$$\omega_{o} = \frac {\lambda_{LS}} {\pi NA_{LS}} = 0.318 \times \frac {\lambda_{LS}} {NA_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o}$$<ul>
-<li>Considering low-excitation levels used in light-sheet imaging coupled with the fact that fluorophore emission doesn't quite scale linearly with excitation intensity, we can see why scientists prefer FWHM instead of $1/{e^2}$ to estimate light-sheet thickness</li>
+$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}} = 0.318 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o} = 1.7 \times t_{FWHM}$$<ul>
+<li>$1/e$ size ($s_{o}$), is also sometimes used to characterize beam-spot radius. $1/{e}$ thickness, $2 \times s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
+</ul>
+$$s_{o} = \sqrt{2} \times \omega_{o}$$<ul>
+<li>Considering low-excitation levels used in light-sheet imaging coupled with the fact that fluorophore emission doesn't scale linearly with excitation intensity, we can see why scientists prefer FWHM to estimate the impact of beam thickness in light-sheet microscopy</li>
 </ul>
 <p><strong>Light-sheet length (Confocal parameter)</strong></p>
-$$ \Delta y = \frac {2 n \lambda_{LS}}{\pi NA^2_{LS}}$$<p>where, $NA_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
+$$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
 <hr>
-<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p><strong>Rayleigh lateral resolution</strong></p>
-$$ PSF_{xy} = \frac {0.61 \lambda} {NA} $$<p><strong>Rayleigh axial resolution</strong></p>
-$$ PSF_{z} =  \frac {2 n \lambda} {NA^2} $$<ul>
+<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p><strong>Lateral resolution</strong></p>
+$$ P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {0.61 \lambda} {N\!A} $$<p><strong>Axial resolution</strong></p>
+$$ P\!S\!F_{z} \Bigg|_{Rayleigh} =  \frac {2 n \lambda} {N\!A^2} $$<ul>
 <li><p>Note that the above <em>estimates</em> are following the Rayleigh criterion, which is a widely-used criterion for the minimum resolvable detail. The imaging process is said to be diffraction-limited when the first diffraction minimum of the image of one source point coincides with the maximum of another</p>
 </li>
 <li><p>Abbe's resolution estimates are also widely used and are slightly different:</p>
 </li>
 </ul>
-$$ PSF_{xy,Abbe} = \frac {\lambda} {2 NA} $$$$ PSF_{z,Abbe} =  \frac {2 \lambda} {NA^2} $$<p><strong>Axial resolution in light-sheet imaging</strong></p>
-$$ PSF_{z} = \Bigg[\frac {2 NA_{LS}} {\lambda_{LS}} + \frac {n\ (1 - \cos \alpha)} {\lambda}\Bigg]^{-1}$$<p>where, 
-$\alpha = \sin^{-1}(NA/n)$ is the detection half-angle of collected light</p>
+$$ P\!S\!F_{xy} \Bigg|_{Abbe} = \frac {\lambda} {2 N\!A} $$$$ P\!S\!F_{z} \Bigg|_{Abbe} =  \frac {2 \lambda} {N\!A^2} $$<p><strong>Axial resolution in light-sheet imaging</strong></p>
+$$ P\!S\!F_{z} \Bigg|_{LS}= \Bigg[\frac {2 N\!A_{LS}} {\lambda_{LS}} + \frac {n\ (1 - \cos \alpha)} {\lambda}\Bigg]^{-1}$$<p>where, 
+$\alpha = \sin^{-1}(N\!A/n)$ is the detection half-angle of collected light</p>
 <p>The first term inside the brackets is the inverse of light-sheet thickness and the second term is the inverse of the detection instrument's axial resolution.<sup>[1],[2]</sup> This equation serves as an upper-limit since all spatial frequencies are assumed to get through the instrument. As can be seen, for thin light-sheets, the first term dominates, whereas for thick light-sheets, the second term dominates. <em>Thin</em> or <em>Thick</em> with respect to what? That'd be in comparison to the depth of field (d) of the detection objective</p>
-<p><em>Conceptually, imagine painting with two wet brushes-- the first brush stroke (excitation) creates a line and a much broader second brush (detection) then smears the paint in the orthogonal direction. From this picture, it's easy to see how we can reduce the smear by using a fine brush stroke for the first brush. This is essentially what lattice light-sheet does by engineering a thin light-sheet. The same effect is true when we make Gaussian light-sheets really thin (approaching wavelength of light)-- when we do so though, the paraxial approximations break down and we can no longer characterize the thickness and confocal parameter of light-sheets as described above. These are technically non-paraxial Gaussian light-sheets</em></p>
+<p><em>Conceptually, imagine painting with two wet brushes-- the first brush stroke (excitation) creates a line and a much broader second brush (detection) then smears the paint in the orthogonal direction. From this picture, it's easy to see how we can reduce the smear caused by our broad second brush by using a fine brush stroke with the first one. This is essentially what lattice light-sheet does by engineering a thin Bessel beam light-sheet. Similarly, a fine brush stroke can be achieved by making a Gaussian light-sheet really thin. When the thickness starts to approach the wavelength of light though, the beam angles at focus become large and the paraxial approximation no longer applies.<sup>[3]</sup> That means, we can no longer characterize the thickness and confocal parameter of light-sheets as described above- technically non-paraxial Gaussian light-sheets at this point.</em></p>
+<hr>
 <p><strong>Depth of field</strong></p>
-$$ d = \frac {1} {2} \times PSF_{z} = \frac {n \lambda} {NA^2} $$<p>This is the z-range in <em>object space (sample space)</em> over which the object is reasonably sharp</p>
+$$ d = \frac {1} {2} \times P\!S\!F_{z}\Bigg|_{Rayleigh} = \frac {n \lambda} {N\!A^2} $$<p>This is the z-range in <em>object space (sample space)</em> over which the object is reasonably sharp</p>
 <p><strong>Depth of focus</strong></p>
-$$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{NA^2}$$<p>This in contrast is the z-range in <em>image space</em> over which the image remains reasonably sharp</p>
+$$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast is the z-range in <em>image space</em> over which the image remains reasonably sharp</p>
 <hr>
 <p><strong>Miscellaneous</strong></p>
 <ul>
-<li>$\lambda$ above refers to emission wavelengh, and $NA$ refers to the numerical aperture of the detection optics</li>
+<li>$\lambda$ above refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</li>
 </ul>
 <ul>
 <li><strong><em>Image Brightness</em></strong> is influenced by the photon flux (photons per unit area per unit time) detected by the camera chip. It is directly proportional to the detection NA and inversely proportional to the square of the lateral magnification. This <a href="https://www.olympus-lifescience.com/en/microscope-resource/primer/java/imagebrightness/">article</a> provides a summary of this</li>
 </ul>
 <ul>
-<li>Handbook of Optics, Chapter on Microscopes <sup>[3]</sup> is a good reference to review the basics</li>
+<li><p>Handbook of Optics, Chapter on Microscopes <sup>[4]</sup> is a reference I use when in doubt</p>
+</li>
+<li><p>These technical guides from CVI Melles Griot are excellent too: <a href="https://raghavchhetri.github.io/pdf/Fundamental-Optics.pdf#view=FitV">Fundamental Optics</a> and <a href="https://raghavchhetri.github.io/pdf/Gaussian-Beam-Optics.pdf#view=FitV">Gaussian Beam Optics</a></p>
+</li>
 </ul>
 <hr>
 <p><font size="2.4">
 [1] Engelbrecht CJ, Stelzer EH (2006) Resolution enhancement in a light-sheet-based microscope (SPIM). Opt Lett 31:1477–1479 <br />
 [2] Gao L, Shao L, Chen B-C, Betzig E (2014) 3D live fluorescence imaging of cellular dynamics using Bessel beam plane illumination microscopy. Nat Protoc 9:1083–1101 <br />
-[3] Inoue S, Oldenbourg R (1994) Microscopes. Handb Opt Vol 2 Devices, Meas Prop:1568
+[3] Nemoto S (1990) Nonparaxial Gaussian beams. Appl Opt 29:1940 <br />    
+[4] Inoue S, Oldenbourg R (1994) Microscopes. Handb Opt Vol 2 Devices, Meas Prop:1568
 </font></p>
 
 </div>
