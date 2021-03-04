@@ -14267,6 +14267,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 <h2 id="Image-formation">Image formation<a class="anchor-link" href="#Image-formation">&#182;</a></h2><p>The essence of image formation is captured by the following equation:</p>
 $$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*P\!S\!F_{em}(x,y) + N(x,y)$$<p>where,</p>
 <p>$I_{em}(x,y)$ is the emission intensity observed at (x,y)</p>
@@ -14274,6 +14275,7 @@ $$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*P\!S\!F_{em}(x,y) + N(x,y)$$<p>where
 <p>$S(x,y)$ is the distribution of source (eg., fluorophores)</p>
 <p>$P\!S\!F_{em}(x,y)$ is the blurring function for incoherent detection (convolution kernel)</p>
 <p>$N(x,y)$ is additional noise</p>
+<p>* denotes 2D convolution operation</p>
 <p>This term, $[I_{ex}(x,y) \times S(x,y)]$, is the underlying object under observation. As seen here, it first gets blurred by a convolution kernel (PSF), then there are various noises that come for a ride, and this is the signal that we measure. <a href="https://en.wikipedia.org/wiki/Deconvolution">Deconvolution</a> is an attempt to solve the inverse-problem, given the measured image, an estimate of the convolution kernel and the noise</p>
 <p>In frequency-domain, the above equation takes the following form:</p>
 $$I_{em}(k_x,k_y) = [I_{ex}(k_x,k_y) * S(k_x,k_y)] \times OT\!F_{em}(k_x,k_y)$$<p>where, 
@@ -14286,16 +14288,14 @@ $OT\!F_{em}(k_x,k_y)$, optical transfer function, is a Fourier transform of the 
 <hr>
 <h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p><strong>Light-sheet thickness (FWHM)</strong></p>
 $$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi N\!A_{LS}} = 0.375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
+<p>A few other ways scientists characterize the beam spots in different fields are:</p>
 <ul>
-<li>$1/e^2$ size (Gaussian beam radius, $\omega_{o}$), is often used to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \times \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
+<li>$1/e$ size ($s_{o}$), is one way to characterize beam-spot radius. $1/{e}$ thickness, $2 \ s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
 </ul>
-$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}} = 0.318 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o} = 1.7 \times t_{FWHM}$$<ul>
-<li>$1/e$ size ($s_{o}$), is also sometimes used to characterize beam-spot radius. $1/{e}$ thickness, $2 \times s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
+$$t_{1/e} = 2 \ s_{o} = 1.2 \times t_{FWHM}$$<ul>
+<li>$1/e^2$ size (Gaussian beam radius, $\omega_{o}$), is in wider-use to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
 </ul>
-$$s_{o} = \sqrt{2} \times \omega_{o}$$<ul>
-<li>Considering low-excitation levels used in light-sheet imaging coupled with the fact that fluorophore emission doesn't scale linearly with excitation intensity, we can see why scientists prefer FWHM to estimate the impact of beam thickness in light-sheet microscopy</li>
-</ul>
-<p><strong>Light-sheet length (Confocal parameter)</strong></p>
+$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o} = 1.7 \times t_{FWHM}$$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
 $$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
 <hr>
@@ -14323,13 +14323,16 @@ $$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast
 <li>$\lambda$ above refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</li>
 </ul>
 <ul>
+<li><strong><em>Image Contrast</em></strong> plays a critical role in live light-sheet imaging. Advanced light-sheet profiles that achieve higher axial resolution often do so at the expense of image contrast. No free lunch! Good-old Gaussian beam is the undisputed champion in the image contrast division!</li>
+</ul>
+<ul>
 <li><strong><em>Image Brightness</em></strong> is influenced by the photon flux (photons per unit area per unit time) detected by the camera chip. It is directly proportional to the detection NA and inversely proportional to the square of the lateral magnification. This <a href="https://www.olympus-lifescience.com/en/microscope-resource/primer/java/imagebrightness/">article</a> provides a summary of this</li>
 </ul>
 <ul>
-<li><p>Handbook of Optics, Chapter on Microscopes <sup>[4]</sup> is a reference I use when in doubt</p>
-</li>
-<li><p>These technical guides from CVI Melles Griot are excellent too: <a href="https://raghavchhetri.github.io/pdf/Fundamental-Optics.pdf#view=FitV">Fundamental Optics</a> and <a href="https://raghavchhetri.github.io/pdf/Gaussian-Beam-Optics.pdf#view=FitV">Gaussian Beam Optics</a></p>
-</li>
+<li>Handbook of Optics, Chapter on Microscopes <sup>[4]</sup> is a reference I use when in doubt</li>
+</ul>
+<ul>
+<li>These technical guides from CVI Melles Griot are excellent too: <a href="https://raghavchhetri.github.io/pdf/Fundamental-Optics.pdf#view=FitV">Fundamental Optics</a> and <a href="https://raghavchhetri.github.io/pdf/Gaussian-Beam-Optics.pdf#view=FitV">Gaussian Beam Optics</a></li>
 </ul>
 <hr>
 <p><font size="2.4">
@@ -14340,6 +14343,20 @@ $$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast
 </font></p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
