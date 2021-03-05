@@ -14290,28 +14290,44 @@ $OT\!F_{em}(k_x,k_y)$, optical transfer function, is a Fourier transform of the 
 $$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi N\!A_{LS}} = 0.375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
 <p>A few other ways scientists characterize the beam spots in different fields are:</p>
 <ul>
-<li>$1/e$ size ($s_{o}$), is one way to characterize beam-spot radius. $1/{e}$ thickness, $2 \ s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
+<li>$1/e$ width ($s_{o}$), is one way to characterize beam-spot radius. $1/{e}$ thickness, $2 \ s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
 </ul>
 $$t_{1/e} = 2 \ s_{o} = 1.2 \times t_{FWHM}$$<ul>
-<li>$1/e^2$ size (Gaussian beam radius, $\omega_{o}$), is in wider-use to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
+<li>$1/e^2$ width (Gaussian beam radius, $\omega_{o}$), is in wider-use to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
 </ul>
 $$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o} = 1.7 \times t_{FWHM}$$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
 $$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p><strong>Lateral resolution</strong></p>
-$$ P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {0.61 \lambda} {N\!A} $$<p><strong>Axial resolution</strong></p>
+<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p><strong>Lateral resolution (wide-field)</strong></p>
+$$ P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {0.61 \lambda} {N\!A} $$<p><strong>Axial resolution (wide-field)</strong></p>
 $$ P\!S\!F_{z} \Bigg|_{Rayleigh} =  \frac {2 n \lambda} {N\!A^2} $$<ul>
-<li><p>Note that the above <em>estimates</em> are following the Rayleigh criterion, which is a widely-used criterion for the minimum resolvable detail. The imaging process is said to be diffraction-limited when the first diffraction minimum of the image of one source point coincides with the maximum of another</p>
-</li>
-<li><p>Abbe's resolution estimates are also widely used and are slightly different:</p>
-</li>
+<li>Note that the above <em>estimates</em> are following the Rayleigh criterion, which is a widely-used criterion for the minimum resolvable detail. The imaging process is said to be diffraction-limited when the first diffraction minimum of the image of one source point coincides with the maximum of another</li>
 </ul>
-$$ P\!S\!F_{xy} \Bigg|_{Abbe} = \frac {\lambda} {2 N\!A} $$$$ P\!S\!F_{z} \Bigg|_{Abbe} =  \frac {2 \lambda} {N\!A^2} $$<p><strong>Axial resolution in light-sheet imaging</strong></p>
+<ul>
+<li>Resolution estimates are commonly carried out by measuring intensity signal from sub-diffraction-sized beads and measuring the FWHM along the lateral and axial dimensions. These FWHM PSF estimates are smaller than the values calculated using the Rayleigh criterion.</li>
+</ul>
+<ul>
+<li>Abbe's resolution estimates are also widely used and are slightly different:</li>
+</ul>
+$$ P\!S\!F_{xy} \Bigg|_{Abbe} = \frac {\lambda} {2 N\!A} $$$$ P\!S\!F_{z} \Bigg|_{Abbe} =  \frac {2 \lambda} {N\!A^2} $$<ul>
+<li>As a rule of thumb, confocal resolution (with a really tiny pinhole) is approx. $\sqrt{2}$ better than wide-field estimates (both lateral and axial), whereas 2-photon is approx. $\sqrt{2}$ worse than wide-field. See this <a href="https://www.nature.com/articles/nbt899/figures/4">figure</a> from <em>Zipfel et. al., Nature Biotech, 2003</em> for 2-photon $1/e$ width estimates</li>
+</ul>
+<p><strong>Axial resolution in light-sheet imaging</strong></p>
 $$ P\!S\!F_{z} \Bigg|_{LS}= \Bigg[\frac {2 N\!A_{LS}} {\lambda_{LS}} + \frac {n\ (1 - \cos \alpha)} {\lambda}\Bigg]^{-1}$$<p>where, 
 $\alpha = \sin^{-1}(N\!A/n)$ is the detection half-angle of collected light</p>
 <p>The first term inside the brackets is the inverse of light-sheet thickness and the second term is the inverse of the detection instrument's axial resolution.<sup>[1],[2]</sup> This equation serves as an upper-limit since all spatial frequencies are assumed to get through the instrument. As can be seen, for thin light-sheets, the first term dominates, whereas for thick light-sheets, the second term dominates. <em>Thin</em> or <em>Thick</em> with respect to what? That'd be in comparison to the depth of field (d) of the detection objective</p>
 <p><em>Conceptually, imagine painting with two wet brushes-- the first brush stroke (excitation) creates a line and a much broader second brush (detection) then smears the paint in the orthogonal direction. From this picture, it's easy to see how we can reduce the smear caused by our broad second brush by using a fine brush stroke with the first one. This is essentially what lattice light-sheet does by engineering a thin Bessel beam light-sheet. Similarly, a fine brush stroke can be achieved by making a Gaussian light-sheet really thin. When the thickness starts to approach the wavelength of light though, the beam angles at focus become large and the paraxial approximation no longer applies.<sup>[3]</sup> That means, we can no longer characterize the thickness and confocal parameter of light-sheets as described above- technically non-paraxial Gaussian light-sheets at this point.</em></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 <p><strong>Depth of field</strong></p>
 $$ d = \frac {1} {2} \times P\!S\!F_{z}\Bigg|_{Rayleigh} = \frac {n \lambda} {N\!A^2} $$<p>This is the z-range in <em>object space (sample space)</em> over which the object is reasonably sharp</p>
