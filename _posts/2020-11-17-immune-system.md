@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Immune System Cheat Sheet"
+title: "Immune System"
 date: 2020-11-17
 ---
 
