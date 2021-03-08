@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remote-focusing in light-sheet microscopy"
+title: "Remote-refocus"
 date: 2020-06-18
 ---
 
