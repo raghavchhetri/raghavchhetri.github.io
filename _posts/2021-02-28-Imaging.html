@@ -14272,7 +14272,7 @@ a.anchor-link {
 $$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*P\!S\!F_{em}(x,y) + N(x,y)$$<p>where,</p>
 <p>$I_{em}(x,y)$ is the emission intensity observed at (x,y)</p>
 <p>$I_{ex}(x,y)$ is the excitation intensity</p>
-<p>$S(x,y)$ is the distribution of source (eg., fluorophores)</p>
+<p>$S(x,y)$ is the distribution of source (eg., fluorophores, emitters)</p>
 <p>$P\!S\!F_{em}(x,y)$ is the blurring function for incoherent detection (convolution kernel)</p>
 <p>$N(x,y)$ is additional noise</p>
 <p>* denotes 2D convolution operation</p>
@@ -14286,16 +14286,36 @@ $OT\!F_{em}(k_x,k_y)$, optical transfer function, is a Fourier transform of the 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
+<h2 id="1-photon-process">1-photon process<a class="anchor-link" href="#1-photon-process">&#182;</a></h2><p>The density of flourophores excited in time $\Delta t$ during a single-photon fluorescence imaging can be written as follows (assuming fluorophores are below saturation):</p>
+$$\frac {\rho_{ex}}{\Delta t} = \rho_{o} \ \sigma_{1p} \Big[ \frac{n}{\Delta A \ \Delta t} \Big] $$<p></p>
+<p>where,</p>
+<p>$\rho_{ex}$: Density of excited fluorophores; <em>[Unit: Volume$^{-1}$]</em></p>
+<p>$\rho_{o}$: Density of fluorophores; <em>[Unit: Volume$^{-1}$]</em></p>
+<p>$\sigma_{1p}$:Fluorophore's <a href="https://en.wikipedia.org/wiki/Absorption_cross_section">absorption cross-section</a> <em>[Unit: Area]</em></p>
+<p>$n$: Number of excitation photons in $\Delta t$ across an area of $\Delta A$</p>
+<p>Note that: $\Big[ \frac{n}{\Delta A \ \Delta t} \Big] h \nu $ is beam energy per unit time per unit area, or beam power ($P_{\nu}$) per unit area, aka beam Intensity ($I_{\nu}$) <em>[Unit of Watt/Area$^2$]</em></p>
+<p>So, the above can be re-written as:</p>
+$$\frac {\rho_{ex}}{\Delta t} = \rho_{o} \ \sigma_{1p} \Big[ \frac{P_{\nu}}{h \nu \ \Delta A} \Big] = \rho_{o} \ \sigma_{1p} \Big[ \frac{I_{\nu}}{h \nu} \Big] $$<p></p>
+<p>Next, not all excited fluorophores return to ground state and emit a photon (<a href="https://en.wikipedia.org/wiki/Stokes_shift">Stokes shift</a>). Quantum efficiency ($\phi$) quantifies this as a ratio of excited fluorophores that emit a photon and the total number of fluorophores in the excited state.</p>
+<p>Then, the emitted photon flux ($\Phi_{em}$, number of photons emitted per sec) from a small sub-volume ($\Delta x \Delta y \ \Delta z$) can be written as:</p>
+$$ \Phi_{em} = \phi \ \frac {\rho_{ex}}{\Delta t} \ \Delta x \ \Delta y \ \Delta z = \phi \ \rho_{o} \ \sigma_{1p} \frac{P_{\nu}}{h \nu} \ \Delta y $$<p>From this, we see that the number of photons emitted scales linearly with excitation power (before saturation is reached). Note that Y is the beam propagation direction and the beam cross-sectional area is taken as $\Delta x \ \Delta z$</p>
+<p>Lastly, during imaging, only a portion of these emitted photons are captured by the detection objective (limited by the $N\!A$) and a small fraction of these are further lost in the detector during the electron-to-charge conversion (dictated by the quantum efficiency of the detector)</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 <h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p><strong>Light-sheet thickness (FWHM)</strong></p>
 $$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi N\!A_{LS}} = 0.375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
 <p>A few other ways scientists characterize the beam spots in different fields are:</p>
 <ul>
 <li>$1/e$ width ($s_{o}$), is one way to characterize beam-spot radius. $1/{e}$ thickness, $2 \ s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
 </ul>
-$$t_{1/e} = 2 \ s_{o} = 1.2 \times t_{FWHM}$$<ul>
+$$t_{1/e} = 1.2 \times t_{FWHM} = 0.45 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<ul>
 <li>$1/e^2$ width (Gaussian beam radius, $\omega_{o}$), is in wider-use to characterize beam-spot radius. $1/{e^2}$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
 </ul>
-$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$$$t_{1/e^2} = 2 \ \omega_{o} = 1.7 \times t_{FWHM}$$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
+$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$$$t_{1/e^2} = 1.7 \times t_{FWHM} = 0.6375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
 $$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
 
