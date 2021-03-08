@@ -14291,7 +14291,7 @@ $$\frac {\rho_{ex}}{\Delta t} = \rho_{o} \ \sigma_{1p} \Big[ \frac{n}{\Delta A \
 <p>where,</p>
 <p>$\rho_{ex}$: Density of excited fluorophores; <em>[Unit: Volume$^{-1}$]</em></p>
 <p>$\rho_{o}$: Density of fluorophores; <em>[Unit: Volume$^{-1}$]</em></p>
-<p>$\sigma_{1p}$:Fluorophore's <a href="https://en.wikipedia.org/wiki/Absorption_cross_section">absorption cross-section</a> <em>[Unit: Area]</em></p>
+<p>$\sigma_{1p}$: Fluorophore's <a href="https://en.wikipedia.org/wiki/Absorption_cross_section">absorption cross-section</a> <em>[Unit: Area]</em></p>
 <p>$n$: Number of excitation photons in $\Delta t$ across an area of $\Delta A$</p>
 <p>Note that: $\Big[ \frac{n}{\Delta A \ \Delta t} \Big] h \nu $ is beam energy per unit time per unit area, or beam power ($P_{\nu}$) per unit area, aka beam Intensity ($I_{\nu}$) <em>[Unit of Watt/Area$^2$]</em></p>
 <p>So, the above can be re-written as:</p>
@@ -14299,7 +14299,7 @@ $$\frac {\rho_{ex}}{\Delta t} = \rho_{o} \ \sigma_{1p} \Big[ \frac{P_{\nu}}{h \n
 <p>Next, not all excited fluorophores return to ground state and emit a photon (<a href="https://en.wikipedia.org/wiki/Stokes_shift">Stokes shift</a>). Quantum efficiency ($\phi$) quantifies this as a ratio of excited fluorophores that emit a photon and the total number of fluorophores in the excited state.</p>
 <p>Then, the emitted photon flux ($\Phi_{em}$, number of photons emitted per sec) from a small sub-volume ($\Delta x \Delta y \ \Delta z$) can be written as:</p>
 $$ \Phi_{em} = \phi \ \frac {\rho_{ex}}{\Delta t} \ \Delta x \ \Delta y \ \Delta z = \phi \ \rho_{o} \ \sigma_{1p} \frac{P_{\nu}}{h \nu} \ \Delta y $$<p>From this, we see that the number of photons emitted scales linearly with excitation power (before saturation is reached). Note that Y is the beam propagation direction and the beam cross-sectional area is taken as $\Delta x \ \Delta z$</p>
-<p>Lastly, during imaging, only a portion of these emitted photons are captured by the detection objective (limited by the $N\!A$) and a small fraction of these are further lost in the detector during the electron-to-charge conversion (dictated by the quantum efficiency of the detector)</p>
+<p>During imaging, only a portion of these emitted photons are captured by the detection objective (limited by the $N\!A$). Assuming no further loss in the beam path, some loss finally occurs during the photon-to-electron conversion at the detector chip (dictated by its quantum efficiency)</p>
 
 </div>
 </div>
