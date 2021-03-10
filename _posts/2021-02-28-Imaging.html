@@ -14359,16 +14359,19 @@ $$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast
 <li>$\lambda$ above refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</li>
 </ul>
 <ul>
-<li><strong><em>Image Contrast</em></strong> plays a critical role in live light-sheet imaging. Advanced light-sheet profiles that achieve higher axial resolution often do so at the expense of image contrast. No free lunch! Good-old Gaussian beam is the undisputed champion in the image contrast division!</li>
+<li><strong><em>Image Contrast</em></strong>, the different in signal between the image and the overall background, plays a critical role in live light-sheet imaging. Advanced light-sheet profiles that achieve higher axial resolution often do so at the expense of image contrast. No free lunch! Good-old Gaussian beam is the undisputed champion in the image contrast division!</li>
 </ul>
 <ul>
-<li><strong><em>Image Brightness</em></strong> is influenced by the photon flux (photons per unit area per unit time) detected by the camera chip. It is directly proportional to the detection NA and inversely proportional to the square of the lateral magnification. This <a href="https://www.olympus-lifescience.com/en/microscope-resource/primer/java/imagebrightness/">article</a> provides a summary of this</li>
+<li><strong><em><a href="https://www.olympus-lifescience.com/en/microscope-resource/primer/java/imagebrightness/">Image Brightness</a></em></strong> is influenced by the photon flux (photons per unit area per unit time) detected by the camera chip. It is directly proportional to the detection NA and inversely proportional to the square of the lateral magnification.</li>
 </ul>
 <ul>
-<li>Use protected metallic mirrors (single reflective surface) for large angles of incidence, large cone angles. Expect light loss of &gt;2-4%. Unprotected metallic mirrors tarnish over time and are also more susceptible to scratches. Broadband dielectric mirrors (layers of reflective surfaces) have excellent reflectivity (&gt;99.9%) across a broad wavelength range, and are excellent choices for many applications. However, not a good fit at large angle of incident and large cone angles. <a href="https://raghavchhetri.github.io/pdf/Mirrors.pdf#view=FitV">Semrock's White paper on Mirrors</a></li>
+<li><strong><em>Perceived Image Brightness</em></strong> is determined by the sensitivity and linearity of the sensors. The relationship between displayed ($I'$) and actual ($I$) pixel brightness is captured by a variable called <strong><em>gamma</em></strong> as $I' = \Big[ \frac{I-Min}{Max-Min} \Big] ^{\gamma}$. Scientific detectors (CCDs and sCMOS) perform this power-law correction using a built-in digital signal processing circuitry (eg, FPGAs). A $\gamma &lt; 1$ means dark regions are accentuated, whereas a $\gamma &gt; 1$ means bright regions are accentuated. A  $\gamma = 0.7$ approximates the response of human eyes.<sup>[4]</sup> <a href="https://www.cambridgeincolour.com/tutorials/gamma-correction.htm">Understanding Gamma correction</a></li>
 </ul>
 <ul>
-<li>Handbook of Optics, Chapter on Microscopes <sup>[4]</sup> is a reference I use when in doubt</li>
+<li><strong><em>Mirrors:</em></strong> Protected metallic mirrors (single reflective surface) are ideal for large angles of incidence and large cone angles-- expect light loss of &gt;2-4%; Also, metallic mirrors tarnish over time and are also more susceptible to the environment. Broadband dielectric mirrors (layers of reflective surfaces) have excellent reflectivity (&gt;99.9%) across a broad wavelength range, and are excellent choices for many applications. However, not a good fit at large angle of incident and large cone angles. <a href="https://raghavchhetri.github.io/pdf/Mirrors.pdf#view=FitV">Semrock's White paper on Mirrors</a></li>
+</ul>
+<ul>
+<li>Handbook of Optics, Chapter on Microscopes <sup>[5]</sup> is a reference I use when in doubt</li>
 </ul>
 <ul>
 <li>Technical guides from CVI Melles Griot on <a href="https://raghavchhetri.github.io/pdf/Fundamental-Optics.pdf#view=FitV">Fundamental Optics</a> and <a href="https://raghavchhetri.github.io/pdf/Gaussian-Beam-Optics.pdf#view=FitV">Gaussian Beam Optics</a></li>
@@ -14377,8 +14380,9 @@ $$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast
 <p><font size="2.4">
 [1] Engelbrecht CJ, Stelzer EH (2006) Resolution enhancement in a light-sheet-based microscope (SPIM). Opt Lett 31:1477–1479 <br />
 [2] Gao L, Shao L, Chen B-C, Betzig E (2014) 3D live fluorescence imaging of cellular dynamics using Bessel beam plane illumination microscopy. Nat Protoc 9:1083–1101 <br />
-[3] Nemoto S (1990) Nonparaxial Gaussian beams. Appl Opt 29:1940 <br />    
-[4] Inoue S, Oldenbourg R (1994) Microscopes. Handb Opt Vol 2 Devices, Meas Prop:1568
+[3] Nemoto S (1990) Nonparaxial Gaussian beams. Appl Opt 29:1940 <br />
+[4] Doug Murphy: Fundamentals of Light Microscopy and Electronic Imaging <br />    
+[5] Inoue S, Oldenbourg R (1994) Microscopes. Handb Opt Vol 2 Devices, Meas Prop:1568
 </font></p>
 
 </div>
