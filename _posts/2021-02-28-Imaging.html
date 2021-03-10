@@ -14324,7 +14324,8 @@ A practical field of view (along beam propagation direction) is set by the confo
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p><strong>Lateral resolution (wide-field)</strong></p>
+<h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p>$\lambda$ here refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</p>
+<p><strong>Lateral resolution (wide-field)</strong></p>
 $$ P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {0.61 \lambda} {N\!A} $$<p><strong>Axial resolution (wide-field)</strong></p>
 $$ P\!S\!F_{z} \Bigg|_{Rayleigh} =  \frac {2 n \lambda} {N\!A^2} $$<ul>
 <li>Note that the above <em>estimates</em> are following the Rayleigh criterion, which is a widely-used criterion for the minimum resolvable detail. According to this, the imaging process is said to be diffraction-limited when the first Airy disk minimum of one point source coincides with the maximum of another nearby point source, and when the two point sources are brought closer than this limit, they can't be resolved unambiguously in the image</li>
@@ -14353,10 +14354,26 @@ $\alpha = \sin^{-1}(N\!A/n)$ is the detection half-angle of collected light</p>
 $$ d = \frac {1} {2} \times P\!S\!F_{z}\Bigg|_{Rayleigh} = \frac {n \lambda} {N\!A^2} $$<p>This is the z-range in <em>object space (sample space)</em> over which the object is reasonably sharp</p>
 <p><strong>Depth of focus</strong></p>
 $$D = d \times \frac {M^2}{n} = \frac {M^2 \lambda}{N\!A^2}$$<p>This in contrast is the z-range in <em>image space</em> over which the image remains reasonably sharp</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<p><strong>Miscellaneous</strong></p>
+<h3 id="Miscellaneous">Miscellaneous<a class="anchor-link" href="#Miscellaneous">&#182;</a></h3><ul>
+<li><p><strong><em>Human eye:</em></strong></p>
+<p>Pupil diameter ($D$) of 3 mm (day) to 9 mm (dark) and a focal length of 22 mm. So,</p>
 <ul>
-<li>$\lambda$ above refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</li>
+<li>NA of $\frac{1.5 \ to \ 4.5 }{22} = 0.07 - 0.2$</li>
+<li>Rayleigh spatial resolution of 5 microns (day) and 2 microns (dark)</li>
+<li>Angular resolution ($\Theta$) of 1.22 x $\frac{\lambda}{D}$ of approx. 15 arcsecond (day) and 45 arcsecond (dark)</li>
+<li>In contrast, Galileo's microscope: 3 arcsecond, Hubble telescope: 0.05 arcsecond</li>
+<li><em>Note: 1 arcsecond is 1/3600 of a degree</em></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="https://blog.addgene.org/when-gfp-lets-you-down">GFP</a> is 28 kDa in size with a length of 4.2 nm and a diameter of about 2.4 nm; Fluorescence lifetime of GFP is about 2.4 ns; Quantum yield of 0.79</li>
 </ul>
 <ul>
 <li><strong><em>Image Contrast</em></strong>, the different in signal between the image and the overall background, plays a critical role in live light-sheet imaging. Advanced light-sheet profiles that achieve higher axial resolution often do so at the expense of image contrast. No free lunch! Good-old Gaussian beam is the undisputed champion in the image contrast division!</li>
