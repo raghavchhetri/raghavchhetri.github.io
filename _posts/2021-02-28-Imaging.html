@@ -14306,20 +14306,17 @@ $$ \Phi_{em} = \phi \ \frac {\rho_{ex}}{\Delta t} \ \Delta x \ \Delta y \ \Delta
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p>Note that there is no universally agreed metric to characterize focal spot of a Gaussian beam, so different metrics are in use:</p>
+<h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p><strong>Light-sheet thickness (FWHM)</strong></p>
+$$ t_{FWHM} = \frac {\sqrt{2 \ln2} \lambda_{LS}} {\pi N\!A_{LS}} = 0.375 \times \frac {\lambda_{LS}} {N\!A_{LS}}$$<p>FWHM has become the default metric in light-sheet community to <em>estimate</em> its thickness. Note that FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
+<p>A few other ways scientists characterize the beam spots in different fields are:</p>
 <ul>
-<li>$1/e^2$ width (Gaussian beam radius, $\omega_{o}$), is the American National Standard and is the most widely used metric to characterize focal-spot radius. $1/e^2$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
+<li>$1/e^2$ width (Gaussian beam radius, $\omega_{o}$), is in wider-use to characterize beam-spot radius. It includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
+$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$
+<li>$1/e$ width ($s_{o}$), is one way to characterize beam-spot radius. It includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
 </ul>
-$$\omega_{o} = \frac {\lambda_{LS}} {\pi N\!A_{LS}}$$<ul>
-<li>$1/e$ width ($s_{o}$), is also used (less frequent) to characterize focal-spot radius. $1/{e}$ thickness, $2 \ s_{o}$, includes light-cones with beam intensity down to 37% of the peak. The electric field strength at this location only drops to $\sqrt{1/e}$ or 61% of the peak</li>
+$$s_{o} = 0.71 \times \omega_{o}$$<ul>
 </ul>
-$$s_{o} = \frac{\omega_{o}} {\sqrt{2}}$$<ul>
-<li>$D4\sigma$ is the ISO international standard to estimate beam diameter. It is 4 times the standard deviation of the intensity distribution along the major and minor axis of the beam. For a perfect Gaussian beam with zero background, this is equal to $1/e^2$ thickness.</li>
-</ul>
-<p><strong>Light-sheet thickness (FWHM)</strong></p>
-<p>Full-width-half-maximum (FWMH), also called half-power beam-width, has been adopted by the light-sheet community to <em>estimate</em> the thickness of light-sheet at the focal spot. FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
-$$ t_{FWHM} = \sqrt{2 \ln2} \ \omega_{o} $$<p>Comparison of focal spot diameter (small to large):</p>
-$$[t_{FWHM} \ \ t_{1/e} \ \ t_{1/e^2}] = [0.375 \ \ \ 0.45 \ \ \ 0.6375] \times \frac {\lambda_{LS}} {N\!A_{LS}}$$$$t_{FWHM}: t_{1/e}: t_{1/e^2} :: 1 : 1.2 : 1.7 $$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
+<p><strong>Light-sheet length (Confocal parameter)</strong></p>
 $$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
 
