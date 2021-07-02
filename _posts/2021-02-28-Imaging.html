@@ -14268,7 +14268,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Image-formation">Image formation<a class="anchor-link" href="#Image-formation">&#182;</a></h2><p>The essence of image formation is captured by the following equation:</p>
+<h2 id="Incoherent-Image-formation">Incoherent Image formation<a class="anchor-link" href="#Incoherent-Image-formation">&#182;</a></h2><p>The essence of incoherent image formation is captured by the following equation:</p>
 $$I_{em}(x,y) = [I_{ex}(x,y) \times S(x,y)]*P\!S\!F_{em}(x,y) + N(x,y)$$<p>where,</p>
 <p>$I_{em}(x,y)$ is the emission intensity observed at (x,y)</p>
 <p>$I_{ex}(x,y)$ is the excitation intensity</p>
@@ -14306,7 +14306,7 @@ $$ \Phi_{em} = \phi \ \frac {\rho_{ex}}{\Delta t} \ \Delta x \ \Delta y \ \Delta
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2 id="Estimates-for-Illumination"><em>Estimates</em> for Illumination<a class="anchor-link" href="#Estimates-for-Illumination">&#182;</a></h2><p>Note that there is no universally agreed metric to characterize focal spot of a Gaussian beam, so different metrics are in use:</p>
+<h2 id="Estimates-for-Illumination-(Gaussian-beam)"><em>Estimates</em> for Illumination (Gaussian-beam)<a class="anchor-link" href="#Estimates-for-Illumination-(Gaussian-beam)">&#182;</a></h2><p>Note that there is no universally agreed metric to characterize focal spot of a Gaussian beam, so different metrics are in use:</p>
 <ul>
 <li>$1/e^2$ width (Gaussian beam radius, $\omega_{o}$), is the American National Standard and is the most widely used metric to characterize focal-spot radius. $1/e^2$ thickness, $2 \ \omega_{o}$, includes light-cones with beam intensity down to 13.5% of the peak. The electric field strength at this location only drops to $1/e$ or 37% of the peak</li>
 </ul>
@@ -14318,8 +14318,10 @@ $$s_{o} = \frac{\omega_{o}} {\sqrt{2}}$$<ul>
 </ul>
 <p><strong>Light-sheet thickness (FWHM)</strong></p>
 <p>Full-width-half-maximum (FWMH), also called half-power beam-width, has been adopted by the light-sheet community to <em>estimate</em> the thickness of light-sheet at the focal spot. FWHM only captures a portion of light-cone with beam intensity down to 50% of the peak. The electric field strength at this location only drops to $\sqrt{1/2}$ or 71% of the peak</p>
-$$ t_{FWHM} = \sqrt{2 \ln2} \ \omega_{o} $$<p>Comparison of focal spot diameter (small to large):</p>
-$$[t_{FWHM} \ \ t_{1/e} \ \ t_{1/e^2}] = [0.375 \ \ \ 0.45 \ \ \ 0.6375] \times \frac {\lambda_{LS}} {N\!A_{LS}}$$$$t_{FWHM}: t_{1/e}: t_{1/e^2} :: 1 : 1.2 : 1.7 $$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
+$$ t_{FWHM} = \sqrt{2 \ln2} \ \omega_{o} = 2\sqrt{\ln2} \ s_{o} $$<p>In terms of focal spot diameter, $t_{FWHM} \ \ t_{1/e} \ \ t_{1/e^2}$ :
+$$= \Bigg[\frac{\sqrt{2\ln2}}{\pi} \ \ \ \ \frac{\sqrt{2}}{\pi} \ \ \ \ \frac{2}{\pi}\Bigg] \times \frac {\lambda_{LS}} {N\!A_{LS}} $$
+$$\approx [0.375 \ \ \ 0.45 \ \ \ 0.64] \times \frac {\lambda_{LS}} {N\!A_{LS}}$$</p>
+$$t_{1/e} = 1.2 \times t_{FWHM}$$$$t_{1/e^2} = 1.7 \times t_{FWHM}$$<p><strong>Light-sheet length (Confocal parameter)</strong></p>
 $$ \Delta y = \frac {2 n \lambda_{L\!S}}{\pi N\!A^2_{L\!S}}$$<p>where, $N\!A_{LS}$ is the numerical aperture of the light-sheet excitation with a wavelength of $\lambda_{LS}$.
 A practical field of view (along beam propagation direction) is set by the confocal parameter of a focused Gaussian beam, which is twice the <a href="https://en.wikipedia.org/wiki/Rayleigh_length">Rayleigh length</a></p>
 
@@ -14329,19 +14331,22 @@ A practical field of view (along beam propagation direction) is set by the confo
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 <h2 id="Estimates-for-Detection"><em>Estimates</em> for Detection<a class="anchor-link" href="#Estimates-for-Detection">&#182;</a></h2><p>$\lambda$ here refers to emission wavelengh, and $N\!A$ refers to the numerical aperture of the detection optics</p>
-<p><strong>Lateral resolution (wide-field)</strong></p>
-$$ P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {0.61 \lambda} {N\!A} $$<p><strong>Axial resolution (wide-field)</strong></p>
+<p><strong>Lateral resolution (wide-field) or Airy disk radius ($r_o$)</strong></p>
+$$ r_o = P\!S\!F_{xy} \Bigg|_{Rayleigh} = \frac {1.22  f \lambda}{n D} = \frac {0.61 \lambda} {N\!A} $$<p>$f$ is the focal length of the lens, and $D$ is the aperture diameter.</p>
+<p><em>Quick detour: $f/D$ is called the F-number. F-number tells us the size of the focal spot at the back focal plane in units of wavelength, when the front focal plane of the lens is evenly illuminated (note: not a Gaussian shaped illumination that falls of radially, but a uniform illumination i.e., a circ function). So, an F-number of 1 means the Airy disk radius (focal spot) will be on the order of 1 wavelength, whereas an F-number of 10 means the focal spot will be approx. 10x larger than the wavelength. In other words, F-number = 1 is a powerful lens whereas F-number = 10 is a lower power lens.</em></p>
+<p><em>Also note that the Airy disk radius ($r_o$) approximately matches the expression for $1/e^2$ diameter of a Gaussian beam, $t_{1/e^2}$. So, the focal spot diameter of a Gaussian beam is also sometimes estimated by using the Airy disk radius expression, although the Airy disk itself has nothing to do with a Gaussian beam</em></p>
+<p><strong>Axial resolution (wide-field)</strong></p>
 $$ P\!S\!F_{z} \Bigg|_{Rayleigh} =  \frac {2 n \lambda} {N\!A^2} $$<ul>
 <li>Note that the above <em>estimates</em> are following the Rayleigh criterion, which is a widely-used criterion for the minimum resolvable detail. According to this, the imaging process is said to be diffraction-limited when the first Airy disk minimum of one point source coincides with the maximum of another nearby point source, and when the two point sources are brought closer than this limit, they can't be resolved unambiguously in the image</li>
 </ul>
 <ul>
-<li>Resolution estimates are commonly carried out by measuring intensity signal from sub-diffraction-sized beads and measuring the FWHM along the lateral and axial dimensions. These FWHM PSF estimates are smaller than the values calculated using the Rayleigh criterion.</li>
-</ul>
-<ul>
-<li>Abbe's resolution estimates are also widely used and are slightly different:</li>
+<li><p>Resolution estimates are commonly carried out by measuring intensity signal from sub-diffraction-sized beads and measuring the FWHM along the lateral and axial dimensions.</p>
+</li>
+<li><p>Abbe's resolution estimates are also widely used and are slightly different:</p>
+</li>
 </ul>
 $$ P\!S\!F_{xy} \Bigg|_{Abbe} = \frac {\lambda} {2 N\!A} $$$$ P\!S\!F_{z} \Bigg|_{Abbe} =  \frac {2 \lambda} {N\!A^2} $$<ul>
-<li>As a rule of thumb, confocal resolution (with a really tiny pinhole) is approx. $\sqrt{2}$ better than wide-field estimates (both lateral and axial), whereas 2-photon is approx. $\sqrt{2}$ worse than wide-field. See this <a href="https://www.nature.com/articles/nbt899/figures/4">figure</a> from <em>Zipfel et. al., Nature Biotech, 2003</em> for 2-photon $1/e$ width estimates</li>
+<li>As a rule of thumb, confocal resolution (with a really tiny pinhole) is approx. $\sqrt{2}$ better than wide-field estimates (both lateral and axial), whereas 2-photon is approx. $\sqrt{2}$ worse than wide-field. See this <a href="https://www.nature.com/articles/nbt899/figures/4">figure</a> from <em>Zipfel et. al., Nature Biotech, 2003</em> for 2-photon $1/e$ width estimates. The corresponding $1/e^2$ width will $\sqrt{2}\ \times$ of these expressions. Also, notice that the wavelength in these expressions is the 2-photon excitation wavelength, which is typically $2\times$ larger than 1-photon excitation wavelength</li>
 </ul>
 <p><strong>Axial resolution in light-sheet imaging</strong></p>
 $$ P\!S\!F_{z} \Bigg|_{LS}= \Bigg[\frac {2 N\!A_{LS}} {\lambda_{LS}} + \frac {n\ (1 - \cos \alpha)} {\lambda}\Bigg]^{-1}$$<p>where, 
