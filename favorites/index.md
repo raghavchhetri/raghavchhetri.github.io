@@ -15,7 +15,7 @@ Here is a collection of a few of my personal favorite articles over the years:
 - [‘Moonshot’ Medicine Will Let Us Down](http://www.nytimes.com/2015/01/29/opinion/moonshot-medicine-will-let-us-down.html), January 2015
 - [Microbes: How bugs may be crucial to your health](https://www.bbc.com/future/article/20120412-the-beasts-inside-you/4http://www.bbc.co.uk/news/magazine-15356016), April 2012
 - [Coincidences: What are the chances of them happening?](http://www.bbc.com/future/story/20120426-what-a-coincidence/), April 2012
-- [Finding peace in Kathmandu](http://www.bbc.com/travel/feature/20120116-find-peace-in-kathmandu), January 2012
+- [Finding peace in Kathmandu](https://www.bbc.com/travel/article/20120116-find-peace-in-kathmandu), January 2012
 - [An Immune System Trained to Kill Cancer](http://www.nytimes.com/2011/09/13/health/13gene.html?pagewanted=all), September 2011
 - [Cancer’s Secrets Come Into Sharper Focus](http://www.nytimes.com/2011/08/16/health/16cancer.html?pagewanted=all), August 2011
 - [Eye Cells as Light Pipes](https://physics.aps.org/story/v25/st15), April 2010 <sup>[&Dagger;](#note2)</sup>
